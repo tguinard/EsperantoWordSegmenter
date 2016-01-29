@@ -1,0 +1,6 @@
+ant
+at
+int
+it
+ont
+ot

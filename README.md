@@ -1,12 +1,12 @@
 Automatically segments Esperanto words into their component morphemes
 
-#Dependencies
+###Dependencies
 
 Only Linux is guaranteed to be supported
 scala (2.11 definitely works)
 python3
 
-#src/WordSegmenter.scala
+###src/WordSegmenter.scala
 
 Algorithm to segment words. Uses two basic steps:
 1. Find all possible segmentations via trie traversal, apply rules unless otherwise specified
@@ -30,7 +30,7 @@ Build
 run:
     src/build.sh
 
-#morphemesByType/
+###morphemesByType/
 
 Defines and classifies all valid morphemes.
 
@@ -46,13 +46,13 @@ To regenerate normal roots run:
 To remake morphemesByType/sets directory (what WordSegmenter.scala uses), run:
     morphemesByType/make\_sets.sh
 
-#espsof/
+###espsof/
 
 Test set from ESPSOF. All presegmented words from the original source are in espsof.txt. testset\_espsof.txt contains all words with known morphemes (also occur in Esperantilo).
 To remake test set (e.g. if the set of known morphemes changes), run:
     espsof/make\_testset.sh
 
-#experiments/
+###experiments/
 
 Create a tagged training set and test set from the ESPSOF test set, and run WordSegmenter.scala. Analyze the segmentation accuracy.
 

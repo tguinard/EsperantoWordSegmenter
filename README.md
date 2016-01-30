@@ -54,13 +54,13 @@ Uses the dictionary "vortaro.xml" from Esperantilo: http://www.xdobry.de/esperan
 
 To regenerate normal roots run:
 ```
-    morphemesByType/normal/build/get\_not\_normal.sh
+    morphemesByType/normal/build/get_not_normal.sh
     morphemesByType/normal/build/classify.py
 ```
 
 To remake morphemesByType/sets directory (what WordSegmenter.scala uses), run:
 ```
-    morphemesByType/make\_sets.sh
+    morphemesByType/make_sets.sh
 ```
 
 ###espsof/
@@ -69,7 +69,7 @@ Test set from ESPSOF. All presegmented words from the original source are in esp
 
 To remake test set (e.g. if the set of known morphemes changes), run:
 ```
-    espsof/make\_testset.sh
+    espsof/make_testset.sh
 ```
 
 ###experiments/
@@ -78,17 +78,17 @@ Create a tagged training set and test set from the ESPSOF test set, and run Word
 
 To create tagged training/test sets, run:
 ```
-    experiments/run\_tests.sh -f
+    experiments/run_tests.sh -f
 ```
 
 To run WordSegmenter.scala with predefined options, run:
 ```
-    experiments/run\_tests.sh -r
+    experiments/run_tests.sh -r
 ```
 
 To create tagged sets and run WordSegmenter.scala, run:
 ```
-    experiments/run\_tests.sh
+    experiments/run_tests.sh
 ```
 
 To analyze the segmentation accuracy, run:

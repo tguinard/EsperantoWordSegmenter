@@ -34,10 +34,10 @@ run:
 
 Defines and classifies all valid morphemes.
 
-Non content morphemes are predefined, following the Akademia Vortaro (http://www.akademio-de-esperanto.org/akademia\_vortaro/), with manual classification
+Non content morphemes are predefined, following the Akademia Vortaro (http://www.akademio-de-esperanto.org/akademia_vortaro/), with manual classification
 
 morphemesByType/normal/generated is built using morphemesByType/normal/build/classify.py
-Uses the dictionary "vortaro.xml" from Esperantilo: http://www.xdobry.de/esperantoedit/index\_en.html
+Uses the dictionary "vortaro.xml" from Esperantilo: http://www.xdobry.de/esperantoedit/index_en.html
 
 To regenerate normal roots run:
     morphemesByType/normal/build/get\_not\_normal.sh
